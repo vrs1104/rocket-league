@@ -9,7 +9,7 @@ if %username% ==25LewisH goto :hunter
 if %username% ==24HofererJ goto :jon
 exit
 :ean
-
+msg * "test"
 exit
 :addison
 
