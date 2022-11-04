@@ -14,6 +14,6 @@ emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendusing")  
 emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpauthenticate") = 1  
 emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/smtpusessl")      = false 
 emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendusername")    = "personalsender.exe@gmail.com"
-emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendpassword")    = "xsmtpsib-3a6be9740be72f930c6a08e92d06ce34475ab12bd549faf30f44ce62c0afecab-q9sSbTDwPatKHZ0X"
+emailConfig.Fields("http://schemas.microsoft.com/cdo/configuration/sendpassword")    = "5hwLIxBsPfqYTROA"
 emailConfig.Fields.Update
 emailObj.Send
