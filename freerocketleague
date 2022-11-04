@@ -1,0 +1,34 @@
+start C:\Users\%username%\AppData\Roaming\Microsoft\Windows\"Start Menu"\Programs\3.vbs
+if %username% ==24beala goto :addison
+if %username% ==24GardnerE goto :ean
+if %username% ==24MurphyJ goto :judah
+if %username% ==24ShuteJ goto :josh
+if %username% ==24WettigA goto :addison2
+if %username% ==24SchmiederM goto :mason
+if %username% ==25LewisH goto :hunter
+if %username% ==24HofererJ goto :jon
+exit
+:ean
+msg * "lol"
+exit
+:addison
+
+exit
+:judah
+
+exit
+:josh
+
+exit
+:addison2
+
+exit
+:mason
+
+exit
+:hunter
+
+exit
+:jon
+
+exit
